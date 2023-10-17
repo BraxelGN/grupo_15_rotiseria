@@ -1,0 +1,170 @@
+/* Estilos para el elemento <body> */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    background-color: #0077b6; /* Color de fondo del cuerpo */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    color: #fff; /* Color de texto predeterminado */
+}
+
+/* Estilos para todos los enlaces en el cuerpo */
+a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos para los enlaces cuando se pasan por encima */
+a:hover {
+    text-decoration: underline; /* Agrega un subrayado al pasar el mouse sobre los enlaces */
+}
+
+
+/* Estilo básico para la barra de navegación */
+nav {
+    background-color: blue;
+    overflow: hidden;
+}
+
+/* Estilo para el icono de menú para dispositivos móviles */
+.menu-icon {
+    text-align: right;
+    padding: 15px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto en pantallas más grandes */
+}
+
+/* Estilo para la lista no ordenada (ul) que contiene los elementos del navbar */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Estilos para la lista de enlaces del menú desplegable en dispositivos móviles */
+.mobile-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Inicialmente oculto en pantallas más grandes */
+    background-color: #333; /* Fondo para el menú desplegable */
+}
+
+.mobile-menu li {
+    padding: 10px; /* Espaciado interno en el menú desplegable */
+    text-align: center; /* Centra el texto dentro del menú desplegable */
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Hace que los enlaces ocupen todo el ancho del menú desplegable */
+}
+
+/* Estilo para los elementos de la lista (li) en el navbar */
+li {
+    float: left;
+}
+
+/* Estilo para los enlaces (a) dentro de los elementos de la lista */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambiar el color del enlace al pasar el ratón por encima */
+li a:hover {
+    background-color: skyblue;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Color de fondo del botón */
+    color: #0077b6; /* Color del texto del botón */
+    text-decoration: none;
+    border: 1px;
+    border-radius: 4px;
+}
+
+/* Media query para dispositivos con un ancho de pantalla de 600px o menos */
+@media screen and (max-width: 600px) {
+    /* Mostrar el icono de menú y ocultar la lista de enlaces */
+    .menu-icon {
+        display: block;
+        text-align: right;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+    }
+    /* Mostrar la lista de enlaces cuando se hace clic en el icono de menú */
+    .menu.active {
+        display: block;
+    }
+}
+
+/* Estilos para el elemento <article> */
+article {
+    display: flex; /* Utiliza flexbox para crear dos columnas */
+    background-color: #0077b6;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Estilos para las columnas dentro del artículo */
+.column {
+    flex: 1; /* Hace que ambas columnas ocupen el mismo espacio horizontalmente */
+    padding: 10px; /* Espaciado interno dentro de cada columna */
+    box-sizing: border-box; /* Incluye el espesor del borde y el relleno en el ancho y alto */
+}
+
+/* Estilos para el encabezado <h1> dentro de la primera columna */
+.column h1 {
+    font-size: 56px;
+    color: #fff;
+    margin: 0; /* Elimina el margen predeterminado del título */
+}
+
+/* Estilos para la imagen dentro de la segunda columna */
+.column img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: 100%; /* La altura se ajusta al 100% del alto del contenedor */
+    object-fit: cover; /* Controla cómo la imagen se ajusta al contenedor */
+    display: block;
+}
+
+.contenido {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    text-align: center; /* Centrar el texto y las imágenes */
+}
+
+/* Estilos para el título <h2> */
+.titulo {
+    color: #0077b6; /* Texto azul */
+}
+
+/* Estilos para las columnas que contienen las imágenes */
+.columnas {
+    display: flex; /* Utiliza flexbox para crear dos columnas */
+    justify-content: center; /* Centra las columnas horizontalmente */
+}
+
+/* Estilos para cada columna de imagen */
+.columna {
+    flex: 1; /* Cada columna ocupa la mitad del ancho */
+    margin: 10px; /* Espaciado entre las columnas */
+}
+
+/* Estilos para las imágenes */
+.columna img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho de su columna */
+    display: block; /* Elimina espacio en blanco debajo de la imagen */
+}
