@@ -21,7 +21,7 @@ a:hover {
 
 /* Estilo básico para la barra de navegación */
 nav {
-    background-color: blue;
+    background-color: #0077b6;
     overflow: hidden;
 }
 
@@ -108,6 +108,18 @@ button {
     }
 }
 
+@media screen and (min-width: 601px) {
+    /* Estilos para resoluciones mayores a 600px */
+    .menu {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+
 /* Estilos para el elemento <article> */
 article {
     display: flex; /* Utiliza flexbox para crear dos columnas */
@@ -167,4 +179,54 @@ article {
 .columna img {
     width: 100%; /* La imagen se ajusta al 100% del ancho de su columna */
     display: block; /* Elimina espacio en blanco debajo de la imagen */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+/* Estilo para el footer */
+footer {
+    background-color: #fff; /* Color de fondo del footer */
+    color: #0077b6; /* Color del texto en el footer */
+    padding: 20px; /* Espaciado interno del footer */
+    text-align: center; /* Centra el contenido del footer */
+}
+
+/* Estilo para el menú de navegación en el footer */
+footer nav ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+footer nav ul li {
+    display: inline; /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilo para los enlaces en el menú de navegación del footer */
+footer nav ul li a {
+    color: #0077b6; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+/* Estilo para los íconos de redes sociales en el footer */
+.social-media a {
+    color: #0077b6; /* Color de los íconos de redes sociales */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+/* Estilo para el aviso de derechos de autor en el footer */
+footer p {
+    margin-top: 20px; /* Espacio superior */
 }

@@ -1,8 +1,9 @@
 function toggleMenu() {
     var mobileMenu = document.getElementById("mobile-menu");
-    if (mobileMenu.style.display === "block" || mobileMenu.style.display === "") {
-        mobileMenu.style.display = "none";
+    if (mobileMenu.classList.contains("visible")) {
+        mobileMenu.classList.remove("visible");
     } else {
-        mobileMenu.style.display = "block";
+        mobileMenu.classList.add("visible");
     }
 }
+

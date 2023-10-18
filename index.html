@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0fc87fe63a.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Rotiseria 15</title>
 </head>
@@ -45,7 +47,67 @@
                 <img src="empanada.jpg" alt="Imagen 2">
             </div>
         </div>
+    </section>
+
+
+    <div>
+        <h2>Menu de bebidas</h2>
+        <button class="accordion hot-drinks">Hot Drinks</button>
+        <div class="panel">
+            <h2>HOT DRINKS</h2>
+            <ul>
+                <li>Pour Over Coffee - $2.75</li>
+                <li>Café Au Lait - $3.25</li>
+                <!-- Otros elementos de Hot Drinks -->
+            </ul>
+        </div>
+        <button class="accordion cold-drinks">Cold Drinks</button>
+        <div class="panel">
+            <h2>COLD DRINKS</h2>
+            <ul>
+                <li>Cold Brew - $3.00</li>
+                <li>Iced Tea - $2.75</li>
+                <!-- Otros elementos de Cold Drinks -->
+            </ul>
+        </div>
+        <script>
+            var accordions = document.querySelectorAll(".accordion");
+            for (var i = 0; i < accordions.length; i++) {
+                accordions[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        © 2023 Rotiseria 15 | Todos los derechos reservados
+    </footer>
     
-        <script src="script.js"></script>
+    
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
