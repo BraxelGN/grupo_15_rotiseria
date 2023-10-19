@@ -1,6 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
 /* Estilos para el elemento <body> */
 body {
-    font-family: Arial, sans-serif; /* Fuente del texto */
     background-color: #0077b6; /* Color de fondo del cuerpo */
     margin: 0; /* Elimina el margen predeterminado del cuerpo */
     padding: 0; /* Elimina el relleno predeterminado del cuerpo */
@@ -19,66 +25,71 @@ a:hover {
 }
 
 
-/* Estilo básico para la barra de navegación */
-nav {
+.header{
     background-color: #0077b6;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
 }
 
-/* Estilo para el icono de menú para dispositivos móviles */
-.menu-icon {
-    text-align: right;
-    padding: 15px;
+.header .logo{
     cursor: pointer;
-    display: none; /* Inicialmente oculto en pantallas más grandes */
+    margin-right: auto;
 }
 
-/* Estilo para la lista no ordenada (ul) que contiene los elementos del navbar */
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
 }
 
-/* Estilos para la lista de enlaces del menú desplegable en dispositivos móviles */
-.mobile-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Inicialmente oculto en pantallas más grandes */
-    background-color: #333; /* Fondo para el menú desplegable */
+.header .logo img:hover{
+    transform: scale(1.2);
 }
 
-.mobile-menu li {
-    padding: 10px; /* Espaciado interno en el menú desplegable */
-    text-align: center; /* Centra el texto dentro del menú desplegable */
+.header .nav-links{
+    list-style: none;
 }
 
-.mobile-menu a {
-    color: white;
-    text-decoration: none;
-    display: block; /* Hace que los enlaces ocupen todo el ancho del menú desplegable */
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
 }
 
-/* Estilo para los elementos de la lista (li) en el navbar */
-li {
-    float: left;
+.header .nav-links li:hover{
+    transform: scale(1.1);
 }
 
-/* Estilo para los enlaces (a) dentro de los elementos de la lista */
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
 }
 
-/* Cambiar el color del enlace al pasar el ratón por encima */
-li a:hover {
-    background-color: skyblue;
+.header .nav-links li a:hover{
+    color: #fff;
 }
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #0077b6;
+    transform: scale(1.1);
+}
+
 
 button {
     display: inline-block;
@@ -179,17 +190,6 @@ article {
 .columna img {
     width: 100%; /* La imagen se ajusta al 100% del ancho de su columna */
     display: block; /* Elimina espacio en blanco debajo de la imagen */
-}
-
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    display: none;
-}
-
-.visible {
-    display: block;
 }
 
 
