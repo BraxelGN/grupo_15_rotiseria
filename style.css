@@ -230,3 +230,7 @@ footer nav ul li a {
 footer p {
     margin-top: 20px; /* Espacio superior */
 }
+
+.contenido .columna{
+    color: #0077b6; /* Color de los íconos de redes sociales */
+}
