@@ -25,7 +25,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="about.html">Acerca de </a></li>
-                <li><a href="#">Nuestro Equipo</a></li>
+                <li><a href="teamwork.html">Cervezas</a></li>
             </ul>
         </nav>
         <a class="btn" href="form.html"><button>Contacto</button></a>
@@ -60,6 +60,8 @@
         </div>
     </section>
 
+    <div id="posts-list"></div>
+
     <div>
         <h2>Menu de bebidas</h2>
         <button class="accordion hot-drinks">Hot Drinks</button>
@@ -80,21 +82,6 @@
                 <!-- Otros elementos de Cold Drinks -->
             </ul>
         </div>
-
-        <script>
-            var accordions = document.querySelectorAll(".accordion");
-            for (var i = 0; i < accordions.length; i++) {
-                accordions[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } else {
-                        panel.style.display = "block";
-                    }
-                });
-            }
-        </script>
 
     </div>
 
@@ -119,9 +106,7 @@
     </footer>
 
 
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
