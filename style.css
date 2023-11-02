@@ -1,31 +1,39 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
+
 /* Estilos para el elemento <body> */
 body {
-    background-color: #0077b6; /* Color de fondo del cuerpo */
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-    color: #fff; /* Color de texto predeterminado */
+    background-color: #0077b6;
+    /* Color de fondo del cuerpo */
+    margin: 0;
+    /* Elimina el margen predeterminado del cuerpo */
+    padding: 0;
+    /* Elimina el relleno predeterminado del cuerpo */
+    color: #fff;
+    /* Color de texto predeterminado */
 }
 
 /* Estilos para todos los enlaces en el cuerpo */
 a {
-    color: #fff; /* Color de los enlaces */
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #fff;
+    /* Color de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado de los enlaces */
 }
 
 /* Estilos para los enlaces cuando se pasan por encima */
 a:hover {
-    text-decoration: underline; /* Agrega un subrayado al pasar el mouse sobre los enlaces */
+    text-decoration: underline;
+    /* Agrega un subrayado al pasar el mouse sobre los enlaces */
 }
 
 
-.header{
+.header {
     background-color: #0077b6;
     display: flex;
     justify-content: flex-end;
@@ -34,45 +42,45 @@ a:hover {
     padding: 5px 10%;
 }
 
-.header .logo{
+.header .logo {
     cursor: pointer;
     margin-right: auto;
 }
 
-.header .logo img{
+.header .logo img {
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
+.header .logo img:hover {
     transform: scale(1.2);
 }
 
-.header .nav-links{
+.header .nav-links {
     list-style: none;
 }
 
-.header .nav-links li{
+.header .nav-links li {
     display: inline-block;
-    padding: 0 20px;    
+    padding: 0 20px;
 }
 
-.header .nav-links li:hover{
+.header .nav-links li:hover {
     transform: scale(1.1);
 }
 
-.header .nav-links a{
+.header .nav-links a {
     font-size: 700;
     color: #eceff1;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.header .nav-links li a:hover{
+.header .nav-links li a:hover {
     color: #fff;
 }
 
-.header .btn button{
+.header .btn button {
     margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
@@ -84,7 +92,7 @@ a:hover {
     transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover{
+.header .btn button:hover {
     background-color: #e2f1f8;
     color: #0077b6;
     transform: scale(1.1);
@@ -94,8 +102,10 @@ a:hover {
 button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fff; /* Color de fondo del botón */
-    color: #0077b6; /* Color del texto del botón */
+    background-color: #fff;
+    /* Color de fondo del botón */
+    color: #0077b6;
+    /* Color del texto del botón */
     text-decoration: none;
     border: 1px;
     border-radius: 4px;
@@ -103,6 +113,7 @@ button {
 
 /* Media query para dispositivos con un ancho de pantalla de 600px o menos */
 @media screen and (max-width: 600px) {
+
     /* Mostrar el icono de menú y ocultar la lista de enlaces */
     .menu-icon {
         display: block;
@@ -110,9 +121,11 @@ button {
         padding: 15px;
         cursor: pointer;
     }
+
     .menu {
         display: none;
     }
+
     /* Mostrar la lista de enlaces cuando se hace clic en el icono de menú */
     .menu.active {
         display: block;
@@ -120,10 +133,12 @@ button {
 }
 
 @media screen and (min-width: 601px) {
+
     /* Estilos para resoluciones mayores a 600px */
     .menu {
         display: block;
     }
+
     .mobile-menu {
         display: none;
     }
@@ -133,7 +148,8 @@ button {
 
 /* Estilos para el elemento <article> */
 article {
-    display: flex; /* Utiliza flexbox para crear dos columnas */
+    display: flex;
+    /* Utiliza flexbox para crear dos columnas */
     background-color: #0077b6;
     padding: 20px;
     border: 1px solid #ccc;
@@ -143,96 +159,128 @@ article {
 
 /* Estilos para las columnas dentro del artículo */
 .column {
-    flex: 1; /* Hace que ambas columnas ocupen el mismo espacio horizontalmente */
-    padding: 10px; /* Espaciado interno dentro de cada columna */
-    box-sizing: border-box; /* Incluye el espesor del borde y el relleno en el ancho y alto */
+    flex: 1;
+    /* Hace que ambas columnas ocupen el mismo espacio horizontalmente */
+    padding: 10px;
+    /* Espaciado interno dentro de cada columna */
+    box-sizing: border-box;
+    /* Incluye el espesor del borde y el relleno en el ancho y alto */
 }
 
 /* Estilos para el encabezado <h1> dentro de la primera columna */
 .column h1 {
     font-size: 56px;
     color: #fff;
-    margin: 0; /* Elimina el margen predeterminado del título */
+    margin: 0;
+    /* Elimina el margen predeterminado del título */
 }
 
 /* Estilos para la imagen dentro de la segunda columna */
 .column img {
-    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
-    height: 100%; /* La altura se ajusta al 100% del alto del contenedor */
-    object-fit: cover; /* Controla cómo la imagen se ajusta al contenedor */
+    width: 100%;
+    /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: 100%;
+    /* La altura se ajusta al 100% del alto del contenedor */
+    object-fit: cover;
+    /* Controla cómo la imagen se ajusta al contenedor */
     display: block;
 }
 
 .contenido {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
+    /* Fondo blanco */
     padding: 20px;
-    text-align: center; /* Centrar el texto y las imágenes */
+    text-align: center;
+    /* Centrar el texto y las imágenes */
 }
 
 /* Estilos para el título <h2> */
 .titulo {
-    color: #0077b6; /* Texto azul */
+    color: #0077b6;
+    /* Texto azul */
 }
 
 /* Estilos para las columnas que contienen las imágenes */
 .columnas {
-    display: flex; /* Utiliza flexbox para crear dos columnas */
-    justify-content: center; /* Centra las columnas horizontalmente */
+    display: flex;
+    /* Utiliza flexbox para crear dos columnas */
+    justify-content: center;
+    /* Centra las columnas horizontalmente */
 }
 
 /* Estilos para cada columna de imagen */
 .columna {
-    flex: 1; /* Cada columna ocupa la mitad del ancho */
-    margin: 10px; /* Espaciado entre las columnas */
+    flex: 1;
+    /* Cada columna ocupa la mitad del ancho */
+    margin: 10px;
+    /* Espaciado entre las columnas */
 }
 
 /* Estilos para las imágenes */
 .columna img {
-    width: 100%; /* La imagen se ajusta al 100% del ancho de su columna */
-    display: block; /* Elimina espacio en blanco debajo de la imagen */
+    width: 100%;
+    /* La imagen se ajusta al 100% del ancho de su columna */
+    display: block;
+    /* Elimina espacio en blanco debajo de la imagen */
 }
 
 
 /* Estilo para el footer */
 footer {
-    background-color: #fff; /* Color de fondo del footer */
-    color: #0077b6; /* Color del texto en el footer */
-    padding: 20px; /* Espaciado interno del footer */
-    text-align: center; /* Centra el contenido del footer */
+    background-color: #fff;
+    /* Color de fondo del footer */
+    color: #0077b6;
+    /* Color del texto en el footer */
+    padding: 20px;
+    /* Espaciado interno del footer */
+    text-align: center;
+    /* Centra el contenido del footer */
 }
 
 /* Estilo para el menú de navegación en el footer */
 footer nav ul {
-    list-style-type: none; /* Quita los marcadores de lista */
-    padding: 0; /* Elimina el relleno predeterminado */
+    list-style-type: none;
+    /* Quita los marcadores de lista */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
 }
 
 footer nav ul li {
-    display: inline; /* Hace que los elementos de la lista se muestren en línea */
-    margin-right: 20px; /* Espacio entre elementos de la lista */
+    display: inline;
+    /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 20px;
+    /* Espacio entre elementos de la lista */
 }
 
 /* Estilo para los enlaces en el menú de navegación del footer */
 footer nav ul li a {
-    color: #0077b6; /* Color del texto de los enlaces */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #0077b6;
+    /* Color del texto de los enlaces */
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
 }
 
 /* Estilo para los íconos de redes sociales en el footer */
 .social-media a {
-    color: #0077b6; /* Color de los íconos de redes sociales */
-    text-decoration: none; /* Quita el subrayado */
-    font-size: 24px; /* Tamaño de los íconos */
-    margin-right: 10px; /* Espacio entre los íconos */
+    color: #0077b6;
+    /* Color de los íconos de redes sociales */
+    text-decoration: none;
+    /* Quita el subrayado */
+    font-size: 24px;
+    /* Tamaño de los íconos */
+    margin-right: 10px;
+    /* Espacio entre los íconos */
 }
 
 /* Estilo para el aviso de derechos de autor en el footer */
 footer p {
-    margin-top: 20px; /* Espacio superior */
+    margin-top: 20px;
+    /* Espacio superior */
 }
 
-.contenido .columna{
-    color: #0077b6; /* Color de los íconos de redes sociales */
+.contenido .columna {
+    color: #0077b6;
+    /* Color de los íconos de redes sociales */
 }
 
 /* Estilos de la capa de superposición */
@@ -242,19 +290,24 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    background: rgba(0, 0, 0, 0.7);
+    /* Fondo semitransparente */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Valor alto para que esté por encima de todo */
-    opacity: 1; /* La capa se muestra inicialmente */
-    transition: opacity 0.5s; /* Animación de transición */
+    z-index: 9999;
+    /* Valor alto para que esté por encima de todo */
+    opacity: 1;
+    /* La capa se muestra inicialmente */
+    transition: opacity 0.5s;
+    /* Animación de transición */
 }
 
 /* Estilos para la animación de carga (puedes personalizarla) */
 .loader {
     border: 16px solid #f3f3f3;
-    border-top: 16px solid #0077b6; /* Color del indicador de carga */
+    border-top: 16px solid #0077b6;
+    /* Color del indicador de carga */
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -263,6 +316,86 @@ footer p {
 
 /* Animación de giro para la animación de carga */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "TITULO TITULO TITULO"
+        "INTRODUCCION-AL-FORMULARIO FORMULARIO LOCALES"
+        "INTRODUCCION-AL-FORMULARIO FORMULARIO LOCALES";
+    justify-items: center;
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+
+.container h1 {
+    
+    font-size: 4vw;
+    text-align: center;
+    margin: auto;
+
+}
+
+.TITLE {
+    grid-area: TITULO;
+    grid-column: 1 / 3;
+}
+
+.INTRODUCCION-AL-FORMULARIO {
+    grid-area: INTRODUCCION-AL-FORMULARIO;
+}
+
+.FORMULARIO {
+    grid-area: FORMULARIO;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.LOCALES {
+    grid-area: LOCALES;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.form-control {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+label, .form-control {
+    color: #333; /* Color de texto oscuro */
+}
+.btn-primary {
+    background-color: #0077b6; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #005b8e; /* Cambia el color de fondo al pasar el mouse */
+}
+.form-group {
+    margin-bottom: 20px; /* Agrega espacio entre grupos de campos */
 }

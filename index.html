@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/0fc87fe63a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="icoPizza.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -15,24 +17,26 @@
     <div class="overlay">
         <div class="loader"></div>
     </div>
-    
+
     <header class="header">
         <div class="logo">
-            <a href="index.html"><img src="icoPizza.png" alt="Logo de la marca"></a>            
+            <a href="index.html"><img src="icoPizza.png" alt="Logo de la marca"></a>
         </div>
         <nav>
-           <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="about.html">Acerca de </a></li>
                 <li><a href="#">Nuestro Equipo</a></li>
-           </ul>            
+            </ul>
         </nav>
-        <a class="btn" href="#"><button>Contacto</button></a>
+        <a class="btn" href="form.html"><button>Contacto</button></a>
     </header>
 
     <article>
         <div class="column">
             <h1>El sabor de "recién hechas" en todo momento.</h1>
-            <p>La Rotisería 15 es una tienda que ofrece productos frescos y deliciosos para entrega a domicilio, presentando los mejores platos del mercado local con la más alta calidad. Nuestros ingredientes son de primera calidad, seleccionados cuidadosamente para garantizar la excelencia en cada preparación.</p>
+            <p>La Rotisería 15 es una tienda que ofrece productos frescos y deliciosos para entrega a domicilio,
+                presentando los mejores platos del mercado local con la más alta calidad. Nuestros ingredientes son de
+                primera calidad, seleccionados cuidadosamente para garantizar la excelencia en cada preparación.</p>
             <a href="#">
                 <button type="button">Encargue ya</button>
             </a>
@@ -46,10 +50,12 @@
         <h2 class="titulo">Título de la Sección</h2>
         <div class="columnas">
             <div class="columna">
-                <iframe src="https://www.youtube.com/embed/Y6MHE0-CQAs?autoplay=1&muted=1" title="Pizza HD" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Y6MHE0-CQAs?autoplay=1&muted=1" title="Pizza HD"
+                    frameborder="0" allow="autoplay;" allowfullscreen></iframe>
             </div>
             <div class="columna">
-                <iframe src="https://www.canva.com/design/DAFy9vFChYw/watch" frameborder="0" title="Publicidad"></iframe>
+                <iframe src="https://www.canva.com/design/DAFy9vFChYw/watch" frameborder="0"
+                    title="Publicidad"></iframe>
             </div>
         </div>
     </section>
@@ -78,7 +84,7 @@
         <script>
             var accordions = document.querySelectorAll(".accordion");
             for (var i = 0; i < accordions.length; i++) {
-                accordions[i].addEventListener("click", function() {
+                accordions[i].addEventListener("click", function () {
                     this.classList.toggle("active");
                     var panel = this.nextElementSibling;
                     if (panel.style.display === "block") {
@@ -111,10 +117,11 @@
         </div>
         © 2023 Rotiseria 15 | Todos los derechos reservados
     </footer>
-    
-    
-    
+
+
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
