@@ -1,4 +1,3 @@
-# grupo_15_rotiseria
 
 # Grupo 15 ||  Rotiseria 15
 
