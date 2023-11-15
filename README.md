@@ -1,8 +1,7 @@
-# grupo_15_rotiseria
 
 # Grupo 15 ||  Rotiseria 15
 
-# Rotiseria 15
+# Rotiseria 15: Link de acceso https://rotiseria-15.netlify.app
 
 ## Descripción
 Esta página web representa a la Rotisería 15, una tienda que ofrece productos frescos y riquisimos para entrega a domicilio. Presenta los mejores platos del mercado local con la más alta calidad, utilizando ingredientes seleccionados cuidadosamente para garantizar la excelencia en cada preparación.
